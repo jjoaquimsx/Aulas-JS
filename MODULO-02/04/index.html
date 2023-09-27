@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      var nome = window.prompt("Qual o seu nome");
+      document.write(`Ola ${nome}, Seu nome tem ${nome.length} letras <br> `);
+
+      document.write(`Seu nome em Maiuscula fica ${nome.toUpperCase()}`);
+      /* O ${} So funciona com ``*/
+
+      /* 
+        var s = "JavaScript"
+        s.length  = Conta o numero de letras
+        s.UpperCase() = Coloca a variavel em letras maiusculas
+        s.LowerCase() = Coloca a variavel em letras minusculas
+        */
+
+        /*
+        var n1= 1541.5
+
+        n1.ToFixed(2) transforma para duas casas decimais
+        
+        n1.ToFixed(2).replace('.', ',') ira trocar o 
+        item selecionado na primeira aspas pelo item da segunda aspas
+
+        n1.ToLocateString('pt-BR', {style: 'currency', currency: 'BRL'})
+        */
+    </script>
+  </body>
+</html>
