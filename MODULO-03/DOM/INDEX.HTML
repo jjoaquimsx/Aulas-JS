@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos em DOM</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
+
 <body>
-    <h1>Primeiros passos Dom</h1>
-    <p>aqui vai o resultado</p>
-<div>clique aqui</div>
+    <h1 id="titulo">Primeiros passos Dom</h1>
+    <p class="para">aqui vai o resultado</p>
+    <div>clique aqui</div>
     <script>
-        
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'blue'
+
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+
+        document.write(p1.innerText)
+
+        var d = window.document.getElementById('titulo')
+
+        d.style.background='#fff'
+        d.style.color='black'
+        d.style.borderRadius='20px'
+        d.style.textAlign='center'
+
+        var p = window.document.getElementsByClassName('para')[0]
+
+        p.style.color='green'
+        p.innerText='ola'
     </script>
+
 </html>
