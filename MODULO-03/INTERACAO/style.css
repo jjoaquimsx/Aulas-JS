@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Quicksand&family=Roboto:wght@300&family=Tulpen+One&display=swap');
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand';
+    background:linear-gradient(90deg, #3c3463, #0b81a5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border-radius: 40px;
+    width: 30vw;
+    background: linear-gradient(45deg, #533372, #be4deb) ;
+    text-align: center;
+    height: 40vh;
+}
+
+.calc{
+    padding: em;
+}
+
+.botao>input{
+    width: 65.5%;
+    padding: 1em;
+    height: 4em;
 }

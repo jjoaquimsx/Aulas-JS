@@ -9,23 +9,30 @@
 </head>
 
 <body>
-    <h1>Somando valores</h1>
-    <input type="number" name="txtn1" id="txtn1">
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <h2 id="resu">Resultado</h2>
+    <div class="container">
+        <h1>Somando valores</h1>
+        <div class="calc">
+            <input type="number" name="txtn1" id="txtn1">
+            <input type="number" name="txtn2" id="txtn2">
+            <div class="botao">
+                <input type="button" value="Somar" onclick="somar()">
+            </div>
+        </div>
+        <h2 id="somar">Resultado</h2>
+    </div>
 
     <script>
         function somar() {
             var tn1 = document.getElementById('txtn1')
             var tn2 = document.getElementById('txtn2')
-            var resu = document.getElementById('resu')
+            var somar = document.getElementById('somar')
 
 
             var n1 = Number(tn1.value/*pega o valor da tn1*/)
             var n2 = Number(tn2.value)
-            var soma = n1 + n2
-            resu.innerText = `A soma entre ${n1} e ${n2} é igual a ${soma}`
+            var somado = n1 + n2
+            var subtraido = n1 - n2
+            somar.innerText = `A soma entre ${n1} e ${n2} é igual a ${somado}`
         }
     </script>
 </body>
