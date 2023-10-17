@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Aprendizado de eventos em DOM</h1>
+    <div id="area" onclick="Clicar()" onmouseenter="Entrou()" onmouseout='saiu()'>
+        <p>entre aqui</p>
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+
+        /*Outra maneira de adicionar funcoes
+        */
+       a/*variavel*/.addEventListener/*Prestara atencao em um evento*/('click'/*Funcao*/, clicar/*nome para marcar a funcao*/)
+       a.addEventListener('mouseout', saiu)
+       a.addEventListener('mouseenter', entrou)
+
+        function entrou() {
+            a.innerText='Entrou. La ele'
+            a.style.background = 'red'
+        }
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.background = 'yellow'
+        }
+        function saiu(){
+            a.innerText='Saiu. La ele 2x'
+            a.style.transition = "1s"
+            a.style.background = 'red'
+        }
+    </script>
+</body>
+
+</html>

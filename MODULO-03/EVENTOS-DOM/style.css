@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#area{
+    background-color: brown;
+    color: aliceblue;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font: 'Poppins';
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+div#entra{
+    background-color: brown;
+    color: aliceblue;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font: 'Poppins';
+    font-size: 20px;
+}
