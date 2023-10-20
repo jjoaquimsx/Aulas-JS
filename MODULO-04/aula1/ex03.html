@@ -5,47 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detran</title>
-    <style>
-        .container {
-            background-color: gray;
-            text-align: center;
-            height: 45vh;
-            border-radius: 20px;
-        }
-
-        .container>h1 {
-            font-size: 25px;
-        }
-
-        p{
-            font-size: 20px;
-        }
-
-        input#txtvel {
-            margin-right: 2em;
-            border-radius: 20px;
-            font-size: 20px;
-            width: 50px;
-            text-align: center;
-        }
-        
-        .verifica{
-            display: inline-flex;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+
     <div class="container">
         <h1>Sistema de multas</h1>
-        <p>Coloque a velocidade do seu carro:</p>
         <div class="verifica">
-            <input type="number" name="txtvel" id="txtvel">
+            <input type="number" name="txtvel" id="txtvel" placeholder="Sua velocidade">
             <p>Km/h</p>
         </div>
-        <input type="button" value="Verificar" onclick="calcular()">
+        <input type="button" value="Verificar" onclick="calcular()" id="botao" >
         <div id="res"></div>
     </div>
+
+
+
+
+
+
+
 
     <script>
 
@@ -54,13 +35,17 @@
             var res = window.document.getElementById('res')
             var vel = Number(txtv.value)
 
-            res.innerHTML = `<h2>Sua velocidade atual é de <strong>${vel}Kmh</strong></h2>`
+            res.innerHTML = `<h3>Sua velocidade atual é de <strong>${vel}Kmh</strong></h3>`
 
             if (vel > 60) {
-                res.innerHTML += `<h2>Voce esta multado por excesso de velocidade</h2>`
+                res.innerHTML += `<h3></h3>`
+                res.innerHTML += `<h3>Voce passou o limite de 60Kh/h e esta multado por excesso de velocidade</h3>`
             }
 
-            res.innerHTML += '<h2>Dirija com cuidado</h2>'
+            res.innerHTML += '<h3>Dirija com cuidado</h3>'
+            res.style.textAlign = 'center'
+            res.style.fontSize = '15px'
+            res.style.padding = '10px'
 
         }
     </script>

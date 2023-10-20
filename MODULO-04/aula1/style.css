@@ -1,0 +1,66 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(194, 210, 212);
+    font-size: 20px;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    height: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.verifica {
+    align-items: center;
+    gap: 20px;
+    display: flex;
+}
+
+.verifica>input {
+    display: flex;
+    width: 10vw;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 0px 5px black;
+}
+
+#botao {
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow, transform;
+    background: radial-gradient(100% 100% at 100% 0%, #9be0a4 0%, #61d6b3 100%);
+    box-shadow: 0px 0.01em 0.01em rgba(46, 50, 94, 0.4), 0px 0.3em 0.7em -0.01em rgba(51, 68, 100, 0.3), inset 0px -0.01em 0px rgba(44, 49, 82, 0.5);
+    padding: 0 2em;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+#botao:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+}
+
+button:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+}
