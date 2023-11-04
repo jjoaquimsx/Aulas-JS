@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(green, yellow);
+}
+
+.relogio {
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+
+}
+
+.caracteres {
+    color: #fff;
+}

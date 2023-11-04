@@ -1,7 +1,10 @@
-var hr = new Date()
-var min = new Date()
-var minu = min.getMinutes()
-var hora = hr.getHours()
+var data = new Date()
+var horas = data.getHours
+var minutos = data.getMinutes
+var sec = data.getSeconds
+
+
+
 if(hora < 6){
     console.log(`Agora são exatamente ${hora}: horas`)
     console.log(`Boa madrugada `)
