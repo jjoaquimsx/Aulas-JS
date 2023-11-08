@@ -24,10 +24,18 @@ section{
 
 section > div > p{
     font-size: 20px;
+    margin: 5px;
 }
 
-#botao{
-    width: 65px;
+.ano{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.botao{
+    width: 70px;
     height: 30px;
     border-radius: 10px;
     border: none;
@@ -36,4 +44,9 @@ section > div > p{
     background-color: rgb(82, 224, 82);
     color: #fff;
     font-family:poppins, sans-serif ;
+    transition: all 0.5s ease-in;
+}
+
+#botao:hover{
+    cursor: pointer;
 }
